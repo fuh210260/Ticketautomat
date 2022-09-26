@@ -102,7 +102,7 @@ public class Ticketautomat
      */
     public void ticketDrucken()
     {
-        // if // FILL IN
+        if(bisherGezahlt >= preis)
         {
             // Ausdruck eines Tickets simulieren
             System.out.println("###############");
@@ -113,13 +113,18 @@ public class Ticketautomat
             System.out.println();
 
             // Gesamtsumme um den Ticketpreis erhöhen
-            // FILL IN
+            setGesamtsumme(gesamtsumme + preis);
 
             // Preis vom bisher Bezahlten abziehen.
-            // FILL IN
-        }
-        // else 
-        // FILL IN
-    }
+            setBisherGezahlt(bisherGezahlt - preis);
 
+            if(bisherGezahlt > 0) {
+                System.out.println("Returning " + bisherGezahlt + "€");
+                setBisherGezahlt(0);
+            }
+        }
+        else {
+            System.out.println("Not enough Money (" + bisherGezahlt + "€)");
+        }
+    }
 }
