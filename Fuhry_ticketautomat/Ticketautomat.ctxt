@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Ticketautomat
+comment0.text=\n\ Ein\ Ticketautomat,\ der\ Tickets\ zu\ einem\ bestimmten\ Preis\ ausdruckt.\n\ Man\ kann\ 1\u20AC\ oder\ 2\u20AC\ einwerfen.\ Ein\ Ticket\ wird\ nur\ gedruckt,\ wenn\ \n\ (seit\ dem\ letzten\ Druck)\ genug\ Geld\ eingeworfen\ wurde.\ Der\ Automat\n\ merkt\ sich,\ wieviel\ Geld\ insgesamt\ schon\ eingeworfen\ wurde.\n\n\ @author\ D.J.\ Barnes,\ M.\ K\u00F6lling\ (adaptiert\:\ H.\ Moritsch\ 2019-10-16)\n
+comment1.params=ticketpreis
+comment1.target=Ticketautomat(int)
+comment1.text=\n\ Erzeuge\ einen\ Ticketautomaten\ f\u00FCr\ einen\ bestimmten\ Ticketpreis.\n
+comment2.params=
+comment2.target=int\ getPreis()
+comment3.params=preisNeu
+comment3.target=void\ setPreis(int)
+comment4.params=
+comment4.target=int\ getBisherGezahlt()
+comment5.params=bisherGezahltNeu
+comment5.target=void\ setBisherGezahlt(int)
+comment6.params=
+comment6.target=int\ getGesamtsumme()
+comment7.params=gesamtsummeNeu
+comment7.target=void\ setGesamtsumme(int)
+comment8.params=betrag
+comment8.target=void\ geldEinwerfen(int)
+comment8.text=\n\ Nimm\ einen\ Betrag\ als\ Anzahlung\ f\u00FCr\ das\ n\u00E4chste\ Ticket.\ \n
+comment9.params=
+comment9.target=void\ ticketDrucken()
+comment9.text=\n\ Drucke\ ein\ Ticket,\ falls\ gen\u00FCend\ Geld\ eingeworfen\ wurde.\ \n\ Ziehe\ den\ Ticketpreis\ vom\ bisher\ gezahlten\ Betrag\ ab.\n\ Fehlermeldung,\ falls\ noch\ Geld\ f\u00FCr\ ein\ Ticket\ fehlt.\n
+numComments=10
