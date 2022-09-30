@@ -135,6 +135,7 @@ public class Ticketautomat
         
         setBisherGezahlt(0);
         
+        System.out.println(restgeld + "€ returned");
         return restgeld;
     }
 }
